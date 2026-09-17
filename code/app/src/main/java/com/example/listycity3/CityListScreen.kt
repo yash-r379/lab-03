@@ -1,5 +1,6 @@
 package com.example.listycity3
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -17,11 +18,12 @@ import com.example.listycity3.ui.theme.ListyCity3Theme
 @Composable
 fun CityListScreen(
     cities: List<City>,
+    onCityClick: (City) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     LazyColumn(modifier = modifier) {
         itemsIndexed(cities) { index, city ->
-            CityRow(city = city)
+            CityRow(city = city, onClick = { onCityClick(city) })
 
             if (index < cities.lastIndex) {
                 HorizontalDivider()
@@ -31,10 +33,11 @@ fun CityListScreen(
 }
 
 @Composable
-fun CityRow(city: City) {
+fun CityRow(city: City, onClick: () -> Unit = {}) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable { onClick() }
             .padding(horizontal = 20.dp, vertical = 16.dp)
     ) {
         Text(
