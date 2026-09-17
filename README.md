@@ -2,16 +2,16 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Yash Rawat`
+- **CCID:** `yrawat`
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+https://ualberta-cmput301.github.io/labs/slides/2026-Lab-3-Slides.pdf
+https://ualberta-cmput301.github.io/labs/slides/Kotlin%20Code%20Conventions.pdf
+https://ualberta-cmput301.github.io/labs/slides/2026-Lab-3-instructions.pdf
+
 
 ## Verbal Collaboration
 
-| Student Name | CCID      |
-| ------------ | --------- |
-| `student`    | `student` |
-| `<Add more>` | `<CCID>`  |
+N/A
